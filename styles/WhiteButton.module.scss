@@ -1,0 +1,30 @@
+.button {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: 3px solid #fff;
+    border-radius: 50vh;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ff7120;
+    transition: 0.2s;
+}
+
+.buttonExternal::after {
+    content: url(/external.svg);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    padding-left: 10px;
+    
+}
+
+
+
+.buttonExternal:hover::after {
+    filter: invert(49%) sepia(45%) saturate(2041%) hue-rotate(345deg) brightness(103%) contrast(105%);
+    transition: 0.2s;
+}

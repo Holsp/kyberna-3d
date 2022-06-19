@@ -1,0 +1,40 @@
+.buttonWrapper {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    left: 3vh;
+    top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.button {
+    position: relative;
+    z-index: 10;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    -webkit-box-shadow: 6px 6px 16px 2px rgba(0, 0, 0, 0.31);
+    box-shadow: 6px 6px 16px 2px rgba(0, 0, 0, 0.31);
+    transition: 0.2s;
+}
+
+.button:hover {
+    width: 6vw;
+    height: 6vw;
+    transition: 200ms;
+}
+
+.buttonWrapper:hover {
+    left: 2.75vh;
+    top: 2.75vh;
+    transition: 200ms;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

@@ -1,0 +1,48 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    background-color: #ff7120;
+    padding: 2vh 4vh 3vh 4vh;
+    
+    .logo {
+      height: 100%;
+      cursor: pointer;
+    }
+    .nav {
+      font-size: 1em;
+    }
+  }
+
+  .button {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 2.5em 0.5em 1.5em;
+    border: 3px solid #fff;
+    border-radius: 50vh;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ff7120;
+    transition: 0.2s;
+}
+
+.button::after {
+    content: url(/external.svg);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    padding-left: 10px;
+    
+}
+
+
+
+.button:hover::after {
+    filter: invert(49%) sepia(45%) saturate(2041%) hue-rotate(345deg) brightness(103%) contrast(105%);
+    transition: 0.2s;
+}

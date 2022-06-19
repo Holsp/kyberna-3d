@@ -1,0 +1,56 @@
+.button {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    border: 3px solid #ff7120;
+    border-radius: 5vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.selected {
+    background: linear-gradient(97deg, #ff7122 0%, #fe4329 100%);
+    color: #fff;
+    animation: extend 1s forwards;
+}
+
+.display {
+    display: none;
+}
+
+@keyframes extend {
+    0%      {width: 5vw;}
+    100%    {width: 15vw;}
+}
+
+.text {
+        position: absolute;
+}
+
+@keyframes fade-out {
+    0%     {opacity: 1;}
+    50%    {opacity: 0;}
+    100%   {opacity: 0;}
+}
+@keyframes fade-in {
+    0%      {opacity: 0;}
+    60%     {opacity: 0;}
+    100%    {opacity: 1;}
+}
+@keyframes fade-in-two {
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
+}
+
+.fadeout {
+    animation: fade-out 400ms ease-out forwards;
+}
+.fadein {
+    animation: fade-in 400ms ease-in forwards;
+}
+.fadeintwo {
+    animation: fade-in-two 200ms ease-in forwards;
+}
